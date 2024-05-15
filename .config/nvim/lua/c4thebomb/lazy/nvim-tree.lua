@@ -19,7 +19,7 @@ return {
                 dotfiles = false,
                 git_ignored = false,
                 custom = { ".git", "node_modules", "venv", "__pycache__" },
-                exclude = { ".github" }
+                exclude = { ".github", ".gitignore" }
             },
         })
 
