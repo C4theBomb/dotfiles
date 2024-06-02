@@ -1,0 +1,16 @@
+[code]
+editor = 'nvim'
+lang = 'cpp'
+comment_problem_desc = true
+comment_leading = '//'
+test = true
+
+[cookies]
+csrf = 'zo9RbBxPVhy35GshsqqOkhupIJ6imtfA7cjFJy5mgZFVNZMhDxhFD6yKTgz9OP8u'
+session = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfYXV0aF91c2VyX2lkIjoiNTI3NDA0NyIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMzRhZDg3YmQ5YWFiYzY1YTA1ZmM2NzM3NDYwNDk3NTVmODY0YjNmN2ZmOGYzM2YzMjYyMzJiOGRmZTJlYzNmZCIsImlkIjo1Mjc0MDQ3LCJlbWFpbCI6ImM0cGF0aW5vQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoiQzR0aGVCb21iIiwidXNlcl9zbHVnIjoiQzR0aGVCb21iIiwiYXZhdGFyIjoiaHR0cHM6Ly9hc3NldHMubGVldGNvZGUuY29tL3VzZXJzL2F2YXRhcnMvYXZhdGFyXzE3MDE2NTg2MTcucG5nIiwicmVmcmVzaGVkX2F0IjoxNzEyNTI5NTgzLCJpcCI6IjEwOC43MC42NC4xNjMiLCJpZGVudGl0eSI6ImY3ZWM3NjJhZTNmY2U0NjZiMGVmNDg1NTZjODBlZWZkIiwic2Vzc2lvbl9pZCI6NTg0OTk4MTIsIl9zZXNzaW9uX2V4cGlyeSI6MTIwOTYwMH0.K51S1eEgGLi_9w-8jhTpWqHX6uNhL1PaD1xYayYA5bk'
+
+[storage]
+cache = 'Problems'
+code = 'code'
+root = '~/Programming/leetcode'
+scripts = 'scripts'

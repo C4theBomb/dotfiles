@@ -32,7 +32,7 @@ return {
 
         require("treesitter-context").setup({
             enable = true,
-
+            multiline_threshold = 2,
         })
     end
 }

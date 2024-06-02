@@ -1,0 +1,20 @@
+[init]
+	defaultBranch = main
+[user]
+	name = C4 Patino
+	email = c4patino@gmail.com
+	signingkey = /home/c4patino/.ssh/github.pub
+[pull]
+	rebase = true
+[maintenance]
+	auto = true
+[commit]
+	gpgsign = true
+[core]
+	editor = nvim
+[gpg]
+	format = ssh
+[fetch]
+	prune = true
+[diff]
+	colorMoved = zebra
