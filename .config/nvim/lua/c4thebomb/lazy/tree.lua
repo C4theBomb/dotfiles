@@ -12,7 +12,7 @@ return {
                 number = true,
             },
             renderer = {
-                group_empty = false,
+                group_empty = true,
                 indent_width = 4,
             },
             filters = {
