@@ -23,6 +23,7 @@ return {
             },
         })
 
+        -- Toggle NvimTree
         vim.keymap.set("n", "<leader>pv", vim.cmd.NvimTreeToggle)
     end
 }
