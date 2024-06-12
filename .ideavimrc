@@ -12,8 +12,8 @@ set number
 set relativenumber
 set ideajoin
 
-map <leader>J <Action>(MoveStatementDown)
-map <leader>K <Action>(MoveStatementUp)
+map J <Action>(MoveStatementDown)
+map K <Action>(MoveStatementUp)
 
 map <C-d> <C-d>zz
 map <C-u> <C-u>zz
