@@ -1,9 +1,29 @@
 return {
+    { "sitiom/nvim-numbertoggle", lazy = false, },
+    { "github/copilot.vim", lazy = false, },
+    {
+        "junegunn/gv.vim",
+        cmd = { "GV" },
+    },
+    {
+        "kylechui/nvim-surround",
+        version = "*",
+        event = "VeryLazy",
+        config = function()
+            require("nvim-surround").setup({})
+        end
+    },
     {
         "stevearc/conform.nvim",
         config = function()
             require("configs.conform")
         end,
+    },
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreview", "MarkdownPreviewToggle", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function() vim.fn["mkdp#util#install"]() end,
     },
     {
         "nvim-tree/nvim-tree.lua",
@@ -62,10 +82,4 @@ return {
             require("configs.zenmode")
         end
     },
-    {
-        "williamboman/mason.nvim",
-        opts = {
-            ensure_installed = { "lua-language-server", "html", "cssls", "pylsp", "java_language_server", "sqlls" }
-        },
-    }
 }
