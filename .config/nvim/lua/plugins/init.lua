@@ -1,9 +1,32 @@
 return {
     { "sitiom/nvim-numbertoggle", lazy = false, },
-    { "github/copilot.vim", lazy = false, },
+    { "zbirenbaum/copilot.lua",   event = "InsertEnter",                             opts = require("configs.overrides").copilot },
+    { "junegunn/gv.vim",          cmd = { "GV" } },
+    { "mbbill/undotree",          cmd = { "UndotreeToggle" } },
+    { "nvim-tree/nvim-tree.lua",  cmd = { "NvimTreeToggle", "NvimTreeFocus" },       opts = require("configs.nvimtree") },
+    { "folke/trouble.nvim",       cmd = { "Trouble" },                               opts = {}, },
+    { "folke/zen-mode.nvim",      keys = { "<leader>zz" },                           config = function() require( "configs.zenmode") end },
+    { "stevearc/conform.nvim",    config = function() require("configs.conform") end },
     {
-        "junegunn/gv.vim",
-        cmd = { "GV" },
+        "hrsh7th/nvim-cmp",
+        dependencies = {
+            {
+                "zbirenbaum/copilot-cmp",
+                config = function()
+                    require("copilot_cmp").setup()
+                end,
+            },
+        },
+        opts = {
+            sources = {
+                { name = "nvim_lsp", group_index = 2 },
+                { name = "copilot",  group_index = 2 },
+                { name = "luasnip",  group_index = 2 },
+                { name = "buffer",   group_index = 2 },
+                { name = "nvim_lua", group_index = 2 },
+                { name = "path",     group_index = 2 },
+            },
+        },
     },
     {
         "kylechui/nvim-surround",
@@ -14,30 +37,10 @@ return {
         end
     },
     {
-        "stevearc/conform.nvim",
-        config = function()
-            require("configs.conform")
-        end,
-    },
-    {
         "iamcco/markdown-preview.nvim",
         cmd = { "MarkdownPreview", "MarkdownPreviewToggle", "MarkdownPreviewStop" },
         ft = { "markdown" },
         build = function() vim.fn["mkdp#util#install"]() end,
-    },
-    {
-        "nvim-tree/nvim-tree.lua",
-        cmd = { "NvimTreeToggle", "NvimTreeFocus" },
-        opts = require("configs.nvimtree")
-    },
-    {
-        "mbbill/undotree",
-        cmd = { "UndotreeToggle" },
-    },
-    {
-        "folke/trouble.nvim",
-        opts = {},
-        cmd = { "Trouble" },
     },
     {
         "neovim/nvim-lspconfig",
@@ -73,13 +76,6 @@ return {
         lazy = false,
         config = function()
             require("configs.ufo")
-        end
-    },
-    {
-        "folke/zen-mode.nvim",
-        keys = { "<leader>zz" },
-        config = function()
-            require("configs.zenmode")
         end
     },
 }
