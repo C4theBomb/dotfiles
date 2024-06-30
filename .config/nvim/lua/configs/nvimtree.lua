@@ -3,7 +3,7 @@ dofile(vim.g.base46_cache .. "nvimtree")
 local options = {
     filters = {
         dotfiles = false,
-        git_ignored = false,
+        git_ignored = true,
         custom = { ".git", "node_modules", "venv", "__pycache__" },
         exclude = { ".github", ".gitignore" },
     },

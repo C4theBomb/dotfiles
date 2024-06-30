@@ -27,8 +27,7 @@ autocmd({ "BufWinEnter" }, {
 autocmd({ "LspAttach" }, {
     group = vim.api.nvim_create_augroup("Lsp", {}),
     callback = function(e)
-        local opts = { buffer = e.buf }
-        vim.keymap.del('n', 'K', opts)
+        local opts = { buffer = e.buf, }
         vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
     end
 })
