@@ -4,7 +4,7 @@ local M = {}
 M.ui = {
     theme = "tokyonight",
     tabufline = {
-        order = { "buffers", "tabs", "treeOffset" }
+        enabled = false,
     },
 }
 
