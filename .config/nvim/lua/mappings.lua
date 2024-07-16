@@ -55,7 +55,7 @@ map("n", "<leader>pf", "<cmd>Telescope find_files<CR>", { desc = "Telescope Find
 map("n", "<leader>pa", "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<CR>",
     { desc = "Telescope Find all files" })
 map("n", "<leader>ps", "<cmd>Telescope live_grep<CR>", { desc = "Telescope Live grep" })
-map("n", "<leader>pz", "<cmd>Telescope current_buffer_fuzzy_find<CR>", { desc = "telescope Find in current buffer" })
+map("n", "<leader>pz", "<cmd>Telescope current_buffer_fuzzy_find<CR>", { desc = "Telescope Find in current buffer" })
 map("n", "<leader>pws", function()
     local word = vim.fn.expand("<cword>")
     require('telescope.builtin').grep_string({ search = word })
@@ -76,3 +76,7 @@ map("n", "<leader>tt", "<cmd>Trouble diagnostics toggle<CR>", { desc = "Errors O
 map("n", "<leader>tf", "<cmd>Trouble diagnostics toggle filter.buf=0<CR>", { desc = "Errors Open buffer diagnostics" })
 map("n", "<leader>tl", "<cmd>Trouble loclist toggle<CR>", { desc = "Errors Open location list" })
 map("n", "<leader>tq", "<cmd>Trouble qflist toggle<CR>", { desc = "Errors Open quickfix fist" })
+
+-- Fugitive
+map("n", "gu", "<cmd> diffget //2<CR>", { desc = "Fugitive Git grab right" })
+map("n", "gu", "<cmd> diffget //3<CR>", { desc = "Fugitive Git grab left" })

@@ -70,12 +70,12 @@ return {
             require("configs.harpoon")
         end,
     },
-    {
-        "kevinhwang91/nvim-ufo",
-        dependencies = { "kevinhwang91/promise-async" },
-        lazy = false,
-        config = function()
-            require("configs.ufo")
-        end
-    },
+    -- {
+    --     "kevinhwang91/nvim-ufo",
+    --     dependencies = { "kevinhwang91/promise-async" },
+    --     lazy = false,
+    --     config = function()
+    --         require("configs.ufo")
+    --     end
+    -- },
 }

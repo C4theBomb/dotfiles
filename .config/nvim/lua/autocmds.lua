@@ -20,7 +20,7 @@ autocmd({ "BufWinEnter" }, {
         end
 
         vim.keymap.set('n', '<leader>p', '<cmd>Git pull<CR>', { desc = "Fugitive Git pull" })
-        vim.keymap.set('n', '<leader>P', '<cmd>Git push<CR>', opts)
+        vim.keymap.set('n', '<leader>P', '<cmd>Git push<CR>', { desc = "Fugitive Git push" })
     end
 })
 
