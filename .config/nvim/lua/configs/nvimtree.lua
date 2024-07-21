@@ -5,7 +5,7 @@ local options = {
         dotfiles = false,
         git_ignored = true,
         custom = { ".git", "node_modules", "venv", "__pycache__" },
-        exclude = { ".github", ".gitignore" },
+        exclude = { ".github", ".gitignore", ".gitmodules", ".gitattributes" },
     },
     disable_netrw = true,
     hijack_netrw = true,
@@ -18,7 +18,7 @@ local options = {
     },
     view = {
         side = "right",
-        width = 50,
+        width = 60,
         number = true,
         adaptive_size = false,
         preserve_window_proportions = true,
@@ -41,7 +41,7 @@ local options = {
     renderer = {
         root_folder_label = false,
         group_empty = true,
-        indent_width = 4,
+        indent_width = 2,
         highlight_git = true,
         highlight_opened_files = "none",
         indent_markers = {
